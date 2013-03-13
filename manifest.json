@@ -1,0 +1,18 @@
+ {
+ 	"manifest_version": 2,
+
+ 	"name": "LittleNoAd",
+ 	"description": "This extension removes the ads in a couple of my frequently visited sites.",
+ 	"version": "1.0",
+
+ 	"content_scripts": [
+    {
+      "matches": ["http://*.free-tv-video-online.me/*"],
+      "js": ["adRemover.js"]
+    },
+    {
+      "matches": ["http://*.imgur.com/*"],
+      "js": ["imgurAdRemover.js"]
+    }
+  ]
+ }
